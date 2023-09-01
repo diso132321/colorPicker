@@ -7,9 +7,10 @@ block content
     br
     input(type="color" name="colorPicker" id="picker" value=`${color}`)
     br
-
-
-
-
-    label(for="picker") Click Me!
+    label(for="textPicker") Text
+    br
+    input(type="color" name="textColorPicker" id="textPicker" value=`${textColor}`)
+    br
     button(type="submit") Submit
+  form(method="POST" action="/random")
+    button(type="submit") Random
